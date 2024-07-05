@@ -44,12 +44,14 @@ const Navbar = () => {
       </button>
 
       {/* Mobile Menu */}
+      {/* Overlay */}
       {nav ? (
         <div className="bg-black/80 w-full h-screen fixed z-10 top-0 left-0"></div>
       ) : (
         ""
       )}
 
+      {/* Sidebar */}
       <div className={nav ? "fixed top-0 left-0 z-10 bg-white w-[300px] h-screen duration-300" : "fixed top-0 left-[-100%] z-10 bg-white w-[300px] h-screen duration-300"}>
         <AiOutlineClose
         onClick={() => setNav(!nav)}
